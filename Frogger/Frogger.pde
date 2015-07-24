@@ -20,8 +20,10 @@ void setup() {
 
 void draw() {
   background(background);
-  image(Log, T, 60);
-  image(Log, T, 120);
+  image(Log, T - 150, 60);
+  image(Log, T - 50, 105);
+  image(Log, T + 20, 195);
+  image(Log, T - (4 * T), 150);
   image(Frogger, x, y);
   T += 5;
   if(T > 600){
