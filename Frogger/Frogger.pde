@@ -38,7 +38,7 @@ void draw() {
   image(Log, t3, 105);
   image(Log, T, 195);
   image(Log, R, 150);
-  image(truck1, Lefttruck, 275);
+  image(truck1, Lefttruck, 270);
   image(truck1, Lefttruck2, 365);
   image(truck2, Righttruck, 320);
   image(truck2, Righttruck2, 410);
@@ -47,7 +47,9 @@ void draw() {
   T2 += 7;
   t3 += 4;
   R -= 5;
-  
+  Lefttruck += 4;
+  Lefttruck2 += 4;
+  //vLOGSv//
   if(T > 700){
     T = -100;
   }
@@ -61,7 +63,7 @@ void draw() {
     t3 = -100;
   }
   
-/////
+//vLOGSv//
 if(T > 700){
     T = -100;
   }
@@ -74,8 +76,15 @@ if(T > 700){
   if(t3 > 700){
     t3 = -100;
   }
+////
+if(Lefttruck > 800) {
+  Lefttruck = -100;
+}if(Lefttruck2 > 800) {
+  Lefttruck2 = -100;
 }
-
+////
+}
+////
 public void keyPressed() {
   if(key == CODED) {
     if(keyCode == UP){
