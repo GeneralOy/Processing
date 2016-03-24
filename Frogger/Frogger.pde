@@ -59,7 +59,7 @@ void draw() {
   if(T2 > 700){
     T2 = -100;
   }
-  if(t3 > 700){
+  if(t3 > 700){a
     t3 = -100;
   }
   
@@ -82,7 +82,8 @@ if(Lefttruck > 800) {
 }if(Lefttruck2 > 800) {
   Lefttruck2 = -100;
 }
-////
+////vHere, make it so the Frogger can jump from one side to other 
+////like the logs and stuff
 }
 ////
 public void keyPressed() {
