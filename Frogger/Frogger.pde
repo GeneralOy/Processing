@@ -38,8 +38,8 @@ void draw() {
   image(Log, t3, 105);
   image(Log, T, 195);
   image(Log, R, 150);
-  image(truck1, Lefttruck, 270);
-  image(truck1, Lefttruck2, 365);
+  image(truck1, Lefttruck, 280);
+  image(truck1, Lefttruck2, 370);w
   image(truck2, Righttruck, 320);
   image(truck2, Righttruck2, 410);
   image(Frogger, x, y);
@@ -59,7 +59,7 @@ void draw() {
   if(T2 > 700){
     T2 = -100;
   }
-  if(t3 > 700){a
+  if(t3 > 700){
     t3 = -100;
   }
   
