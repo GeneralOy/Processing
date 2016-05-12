@@ -7,14 +7,15 @@ void setup() {
 void draw(){
   //background(50,50,50);
   
-  float x = random(500);
-  float y = random(500);
+  float x = random(5000);
+  float y = random(5000);
   float size = random(100);
-  float colorRandom = random(500);
-  float colorRandom2 = random(360);
-  float colorRandom3 = random(360);
+  float colorRandom = random(5000);
+  float colorRandom2 = random(255);
+  float colorRandom3 = random(255);
+  float colorRandom4 = random(255);
   ellipse(getWormX(50),getWormY(50), size, size);
-  makeMagical(x,y, colorRandom);
+  makeMagical(colorRandom2,colorRandom3, colorRandom4);
   fill(colorRandom,colorRandom2,colorRandom3);
   
 //x+=1;
