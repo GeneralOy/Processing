@@ -42,7 +42,7 @@ void draw() {
   image(truck1, Lefttruck2, 370);
  
   image(truck2, Righttruck, 320);
-  image(truck2, Righttruck2, 410);
+  image(truck2, Righttruck2, 420);
   image(Frogger, x, y);
   T += 5;
   T2 += 7;
@@ -50,6 +50,8 @@ void draw() {
   R -= 5;
   Lefttruck += 4;
   Lefttruck2 += 4;
+  Righttruck -=5;
+  Righttruck2 -=4;
   //vLOGSv//
   if(T > 700){
     T = -100;
@@ -82,9 +84,26 @@ if(Lefttruck > 800) {
   Lefttruck = -100;
 }if(Lefttruck2 > 800) {
   Lefttruck2 = -100;
+}if(Righttruck < -150) {
+  Righttruck = 620;
+}if(Righttruck2 < -200) {
+  Righttruck2 = 620;
 }
 ////vHere, make it so the Frogger can jump from one side to other 
 ////like the logs and stuff
+if(y > 200) {
+if(x < -50) {
+  x = 500;
+}if(x > 500) {
+  x = -50;
+}
+}else if(y < 200) {
+  if(x < 5) {
+  x = 10;
+}if(x > 450) {
+  x = 450;
+}
+}
 }
 ////
 public void keyPressed() {
