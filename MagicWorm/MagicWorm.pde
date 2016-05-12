@@ -10,11 +10,11 @@ void draw(){
   float x = random(500);
   float y = random(500);
   float size = random(100);
-  float colorRandom = random(360);
+  float colorRandom = random(500);
   float colorRandom2 = random(360);
   float colorRandom3 = random(360);
   ellipse(getWormX(50),getWormY(50), size, size);
-  makeMagical(x,y, colorRandom,colorRandom2);
+  makeMagical(x,y, colorRandom);
   fill(colorRandom,colorRandom2,colorRandom3);
   
 //x+=1;
@@ -24,8 +24,8 @@ void draw(){
  float frequency = .01;
 float noiseInterval = PI; 
 
-void makeMagical(float x,float y, float y2, float x2) {
-  fill( x, y, y   nœ, x );rect(0, 0, width, height);noStroke();
+void makeMagical(float x,float y, float x2) {
+  fill( x, y, x2,10 );rect(0, 0, width, height);noStroke();
 }
 
 float getWormX(int i) {
