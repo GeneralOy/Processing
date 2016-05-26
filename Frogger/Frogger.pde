@@ -70,7 +70,7 @@ void draw() {
 if(T > 700){
     T = -100;
   }
-  if(
+ 
   if(R < -200){
     R = 600;
   }
@@ -106,7 +106,11 @@ if(x < -50) {
 }
 }
 }
-////
+////vDetectors for trucksv////
+
+////vDetectors  for  logsv////
+
+//////////vMOVEMENTv//////////
 public void keyPressed() {
   if(key == CODED) {
     if(keyCode == UP){
