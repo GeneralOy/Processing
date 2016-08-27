@@ -19,7 +19,7 @@ void setup() {
   Log = loadImage("FroggerLog.png");
   truck1 = loadImage("Froggertruck1.png");
   truck2 = loadImage("FroggerTruck2.png");
-  size(background.width, background.height);
+  size(516, 560);
   x = 250;
   y = 450;
   T = 20;
@@ -107,6 +107,8 @@ if(x < -50) {
 }
 }
 ////vDetectors for trucksv////
+//if(truckX + truck.width <= frogger.x && truckX >= frogger.x + frogger.width){
+  
 
 ////vDetectors  for  logsv////
 
