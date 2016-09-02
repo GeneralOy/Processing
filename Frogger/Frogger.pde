@@ -3,6 +3,7 @@ PImage background;
 PImage Log;
 PImage truck1;
 PImage truck2;
+public boolean dontMove;
 public int x;
 public int y;
 public int T;
@@ -20,6 +21,7 @@ void setup() {
   truck1 = loadImage("Froggertruck1.png");
   truck2 = loadImage("FroggerTruck2.png");
   size(516, 560);
+  dontMove = false;
   x = 250;
   y = 450;
   T = 20;
@@ -97,15 +99,23 @@ if(x < -50) {
   x = 500;
 }if(x > 500) {
   x = -50;
-}
+}}//if(key == CODED) {
+    if(y < 200) {
+    if(x < 5) {
+      x = 5;
+    }if(x > 450) {
+      x = 420;
+    }
 }else if(y < 200) {
   if(x < 5) {
-  x = 10;
+  x = 50;
 }if(x > 450) {
   x = 450;
 }
-}
-}
+}if(y > 470){
+        y = 450;
+    }}
+
 ////vDetectors for trucksv////
 //if(truckX + truck.width <= frogger.x && truckX >= frogger.x + frogger.width){
   
@@ -114,22 +124,23 @@ if(x < -50) {
 
 //////////vMOVEMENTv//////////
 public void keyPressed() {
-  if(key == CODED) {
+    if(key == CODED) {
     if(keyCode == UP){
       Frogger = loadImage("Frogger.png");
-      y -= 45;
+      y -= 44;
     }
     if(keyCode == LEFT){
       Frogger = loadImage("Frogger 2.png");
-      x -= 45;
+      x -= 44;
     }
     if(keyCode == RIGHT){
       Frogger = loadImage("Frogger 3.png");
-      x += 45;
+      x += 44;
     }
     if(keyCode == DOWN){
       Frogger = loadImage("Frogger 4.png");
-      y += 45;
-    }
-  }
+      y += 44;
+      
+  }}
+  
 }
