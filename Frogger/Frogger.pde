@@ -23,7 +23,7 @@ void setup() {
   size(516, 560);
   dontMove = false;
   x = 250;
-  y = 450;
+  y = 460;
   T = 20;
   T2 = 150;
   t3 = -50;
@@ -113,7 +113,7 @@ if(x < -50) {
   x = 450;
 }
 }if(y > 470){
-        y = 450;
+        y = 460;
     }}
 
 ////vDetectors for trucksv////
