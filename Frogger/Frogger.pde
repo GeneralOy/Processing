@@ -3,6 +3,8 @@ PImage background;
 PImage Log;
 PImage truck1;
 PImage truck2;
+public boolean LogStuffs;
+public boolean LogStuffs2;
 public boolean dontMove;
 public int x;
 public int y;
@@ -21,6 +23,8 @@ void setup() {
   truck1 = loadImage("Froggertruck1.png");
   truck2 = loadImage("FroggerTruck2.png");
   size(516, 560);
+  LogStuffs = false;
+  LogStuffs2 = false;
   dontMove = false;
   x = 250;
   y = 460;
@@ -35,6 +39,8 @@ void setup() {
 }
 
 void draw() {
+  LogStuffs = false;
+  LogStuffs2 = false;
   background(background);
   image(Log, T2, 60);
   image(Log, t3, 105);
@@ -57,30 +63,38 @@ void draw() {
   //vLOGSv//
   if(T > 700){
     T = -100;
+    LogStuffs = true;
   }
   if(R < -200){
     R = 600;
+    LogStuffs = true;
   }
   if(T2 > 700){
     T2 = -100;
+    LogStuffs = true;
   }
   if(t3 > 700){
     t3 = -100;
+    LogStuffs = true;
   }
   
 //vLOGSv//
 if(T > 700){
     T = -100;
+    LogStuffs2 = true;  
   }
  
   if(R < -200){
     R = 600;
+    LogStuffs2 = true;  
   }
   if(T2 > 700){
     T2 = -100;
+    LogStuffs2 = true;  
   }
   if(t3 > 700){
     t3 = -100;
+    LogStuffs2 = true;  
   }
 ////
 if(Lefttruck > 800) {
@@ -109,7 +123,8 @@ if(x < -50) {
 }else if(y < 200) {
   if(x < 5) {
   x = 50;
-}if(x > 450) {
+}
+if(x > 450) {
   x = 450;
 }
 }if(y > 470){
