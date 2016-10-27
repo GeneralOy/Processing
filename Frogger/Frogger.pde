@@ -47,9 +47,9 @@ void draw() {
   image(Log, T, 195);
   image(Log, R, 150);
   image(Frogger, x, y);
-  image(truck1, Lefttruck, 280);
-  image(truck1, Lefttruck2, 370);
-  image(truck2, Righttruck, 320);
+  image(truck1, Lefttruck, 282);
+  image(truck1, Lefttruck2, 375);
+  image(truck2, Righttruck, 330);
   image(truck2, Righttruck2, 420);
   T += 5;
   T2 += 7;
