@@ -133,7 +133,6 @@ if(x > 450) {
 ////vDetectors for trucksv////
 //if(truckX + truck.width <= frogger.x && truckX >= frogger.x + frogger.width){
   
-
 ////vDetectors  for  logsv////
 
 //////////vMOVEMENTv//////////
