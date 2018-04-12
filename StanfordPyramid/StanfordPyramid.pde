@@ -1,9 +1,4 @@
-//centered at bottom of window ^
-//use a var for BRICK_WIDTH, ^
-//BRICK_HEIGHT, ^
-//BRICKS_IN_BASE ^
-//2 FOR loops ^
-//only use Rect() once ^
+//centered at bottom of window ^use a var for BRICK_WIDTH, ^BRICK_HEIGHT, ^BRICKS_IN_BASE ^2 FOR loops ^only use Rect() once ^
 //finished around 25 min - 3:35 ish to 4:00
 public int BRICK_WIDTH;
 public int BRICK_HEIGHT;
@@ -38,16 +33,7 @@ public void MakePyramid() {
      yLoc -= BRICK_HEIGHT;
    }
 }
-
-/*public void MapePyramidEfficient() {
-  for(int yLoc = 500-BRICK_HEIGHT; yLoc<(BRICKS_IN_BASE+1)*(BRICK_HEIGHT); yLoc-=BRICK_HEIGHT) {
-     for(int xLoc = 1; xLoc<BRICKS_CURRENT_LAYER+1; xLoc++) {
-       stroke(9);
-       rect(xLoc,yLoc,BRICK_WIDTH,BRICK_HEIGHT);
-       xLoc += BRICK_WIDTH;
-     }
-     BRICKS_CURRENT_LAYER -= 1;
-     xLoc = (width/2)-((BRICK_WIDTH*BRICKS_IN_BASE)/2)+(BRICK_WIDTH/2)*i;
-     //yLoc -= BRICK_HEIGHT;
-   }
-}*/
+                            /*vVv optimizing attempts vVv*/
+//public void MapePyramidEfficient() {//for(int yLoc = 500-BRICK_HEIGHT; yLoc<(BRICKS_IN_BASE+1)*(BRICK_HEIGHT); yLoc-=BRICK_HEIGHT) {
+//for(int xLoc = 1; xLoc<BRICKS_CURRENT_LAYER+1; xLoc++) {//stroke(9);//rect(xLoc,yLoc,BRICK_WIDTH,BRICK_HEIGHT);//xLoc += BRICK_WIDTH;
+//}//BRICKS_CURRENT_LAYER -= 1;//xLoc = (width/2)-((BRICK_WIDTH*BRICKS_IN_BASE)/2)+(BRICK_WIDTH/2)*i;//yLoc -= BRICK_HEIGHT;//}//}
