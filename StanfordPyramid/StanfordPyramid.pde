@@ -19,6 +19,7 @@ void setup() {
 
 void draw() {
    MakePyramid();
+   //MakePyramidOptimized();
 }
 
 public void MakePyramid() {
@@ -33,6 +34,15 @@ public void MakePyramid() {
      yLoc -= BRICK_HEIGHT;
    }
 }
+
+/*public void MakePyramidOptimized() {
+   for(int BrickYLoc = 500-(BRICK_HEIGHT*(BRICKS_IN_BASE-BRICKS_CURRENT_LAYER+1)); BrickYLoc<BRICKS_IN_BASE+1; BrickYLoc-=BRICK_HEIGHT) {
+     for(int BrickXLoc = (width/2)-((BRICK_WIDTH*BRICKS_CURRENT_LAYER)/2); BrickXLoc<BRICKS_CURRENT_LAYER+1; BrickXLoc+=BRICK_WIDTH) {
+         stroke(9);
+         rect(BrickXLoc,BrickYLoc,BRICK_WIDTH,BRICK_HEIGHT);
+     }
+   }
+}*/
                             /*vVv optimizing attempts vVv*/
 //public void MapePyramidEfficient() {//for(int yLoc = 500-BRICK_HEIGHT; yLoc<(BRICKS_IN_BASE+1)*(BRICK_HEIGHT); yLoc-=BRICK_HEIGHT) {
 //for(int xLoc = 1; xLoc<BRICKS_CURRENT_LAYER+1; xLoc++) {//stroke(9);//rect(xLoc,yLoc,BRICK_WIDTH,BRICK_HEIGHT);//xLoc += BRICK_WIDTH;
