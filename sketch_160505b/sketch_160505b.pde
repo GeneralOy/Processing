@@ -16,7 +16,7 @@ void draw(){
 //x+=1;
 //y+=1;
 }
-float frequency = .001;
+float frequency = .01;
 float noiseInterval = PI; 
 
 void makeMagical() {
@@ -30,4 +30,3 @@ float getWormX(int i) {
 float getWormY(int i) {
   return map(noise(i*noiseInterval+1 + frameCount * frequency), 0, 1, 0, height);
 }
-
